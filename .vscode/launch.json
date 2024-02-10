@@ -1,0 +1,89 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "SDLOpenGL (Debug)",
+            "type": "cppdbg",
+            "request": "launch",
+            "windows": {
+                "program": "${workspaceFolder}/Demo4/SDL/SDL/SDLOpenGL/buildNinjaMC/Msvc/buildOut/SDLOpenGL/bin/Debug/SDLNoOpenGL_d",
+            },
+            "linux": {
+                "program": "${workspaceFolder}/Demo4/SDL/SDL/SDLOpenGL/buildNinjaMC/Gnu/buildOut/SDLOpenGL/bin/Debug/SDLNoOpenGL_d",
+            },
+            "osx": {
+                "program": "${workspaceFolder}/Demo4/SDL/SDL/SDLOpenGL/buildNinjaMC/Clang/buildOut/SDLOpenGL/bin/Debug/SDLNoOpenGL_d",
+            },
+            // Adjust the path to the Debug executable (rebuild before debugging!)
+/*
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildMake/Gnu/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildMake/Clang/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNMake/Msvc/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinja/Gnu/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinja/Clang/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinja/Msvc/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Gnu/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Clang/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Msvc/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildVS/x32/Msvc/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildVS/x64/Msvc/buildOut/Gui/bin/Debug/SDLNoOpenGL_d",
+*/
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "SDLOpenGL (RelWithDebInfo)",
+            "type": "cppdbg",
+            "request": "launch",
+            // Adjust the path to the RelWithDebInfo executable (rebuild before debugging!)
+/*
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildMake/Gnu/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildMake/Clang/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNMake/Msvc/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinja/Gnu/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinja/Clang/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinja/Msvc/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Gnu/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Clang/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Msvc/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildVS/x32/Msvc/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildVS/x64/Msvc/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+*/
+            "program": "${workspaceFolder}/Cpp/Demo4/SDL/SDLOpenGL/buildNinjaMC/Gnu/buildOut/Gui/bin/RelWithDebInfo/SDLOpenGL",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
